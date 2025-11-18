@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Profile Picture Gauge</title>
   <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
     #profile-gauge-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
       width: 100%;
-      height: 100%;
     }
     #profileGauge {
       max-width: 100%;
       height: auto;
-      max-width: 400px;
     }
   </style>
 </head>
@@ -24,8 +29,8 @@
     <canvas id="profileGauge"></canvas>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
-  <script src="./function.js"></script>
-  <script src="./driver.js"></script>
+  <script src="function.js"></script>
+  <script src="driver.js"></script>
 </body>
 </html>
 
