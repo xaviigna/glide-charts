@@ -5,6 +5,7 @@
   "author": "Your Name",
   "category": "Charts",
   "icon": "📊",
+  "entry": "index.html",
   "settings": [
     {
       "name": "profileImageUrl",
