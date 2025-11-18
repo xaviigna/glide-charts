@@ -1,73 +1,52 @@
-{
-  "name": "Profile Picture Gauge",
-  "version": "1.0.0",
-  "description": "A radial gauge chart that wraps around a profile picture. Perfect for showing progress, scores, or metrics with a personalized touch.",
-  "author": "Your Name",
-  "category": "Charts",
-  "icon": "📊",
-  "entry": "index.html",
-  "settings": [
-    {
-      "name": "profileImageUrl",
-      "label": "Profile Image URL",
-      "type": "text",
-      "default": "",
-      "description": "URL of the profile picture to display in the center",
-      "required": false
-    },
-    {
-      "name": "value",
-      "label": "Gauge Value",
-      "type": "number",
-      "default": 75,
-      "min": 0,
-      "max": 100,
-      "description": "The gauge value from 0-100",
-      "required": true
-    },
-    {
-      "name": "gaugeColor",
-      "label": "Gauge Color",
-      "type": "text",
-      "default": "rgba(34, 139, 34, 0.8)",
-      "description": "Color of the filled gauge (CSS color format)",
-      "required": false
-    },
-    {
-      "name": "trackColor",
-      "label": "Track Color",
-      "type": "text",
-      "default": "rgba(204, 221, 238, 0.3)",
-      "description": "Color of the empty track background (CSS color format)",
-      "required": false
-    },
-    {
-      "name": "centerSize",
-      "label": "Center Size (%)",
-      "type": "number",
-      "default": 80,
-      "min": 50,
-      "max": 95,
-      "description": "Size of the center area as percentage of the gauge",
-      "required": false
-    },
-    {
-      "name": "padding",
-      "label": "Padding",
-      "type": "number",
-      "default": 4,
-      "min": 0,
-      "max": 20,
-      "description": "Padding around the profile image",
-      "required": false
-    }
-  ],
-  "dependencies": [
-    {
-      "name": "Chart.js",
-      "url": "https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js",
-      "type": "script"
-    }
-  ]
-}
+[
+  {
+    "kind": "component",
+    "name": "Profile Picture Gauge",
+    "description": "A radial gauge chart that wraps around a profile picture. Perfect for showing progress, scores, or metrics with a personalized touch.",
+    "author": "Your Name",
+    "params": [
+      {
+        "name": "profileImageUrl",
+        "displayName": "Profile Image URL",
+        "type": "string",
+        "description": "URL of the profile picture to display in the center"
+      },
+      {
+        "name": "value",
+        "displayName": "Gauge Value",
+        "type": "number",
+        "description": "The gauge value from 0-100",
+        "default": 75
+      },
+      {
+        "name": "gaugeColor",
+        "displayName": "Gauge Color",
+        "type": "string",
+        "description": "Color of the filled gauge (CSS color format)",
+        "default": "rgba(34, 139, 34, 0.8)"
+      },
+      {
+        "name": "trackColor",
+        "displayName": "Track Color",
+        "type": "string",
+        "description": "Color of the empty track background (CSS color format)",
+        "default": "rgba(204, 221, 238, 0.3)"
+      },
+      {
+        "name": "centerSize",
+        "displayName": "Center Size (%)",
+        "type": "number",
+        "description": "Size of the center area as percentage of the gauge",
+        "default": 80
+      },
+      {
+        "name": "padding",
+        "displayName": "Padding",
+        "type": "number",
+        "description": "Padding around the profile image",
+        "default": 4
+      }
+    ]
+  }
+]
 
